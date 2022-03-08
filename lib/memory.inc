@@ -5,18 +5,18 @@
 
 // Memory region bases
 constant  RDRAM_BASE = 0
-constant  RAMIO_BASE = 0x3F0
+constant  RAMIO_BASE = KSEG1 + 0x3F0
 constant  SPMEM_BASE = 0x400
-constant  SP_BASE    = 0x404
-constant  SP_PC_BASE = 0x408
-constant  DPC_BASE   = 0x410
-constant  DPS_BASE   = 0x420
-constant  MI_BASE    = 0x430
-constant  VI_BASE    = 0x440
-constant  AI_BASE    = 0x450
-constant  PI_BASE    = 0x460
-constant  RI_BASE    = 0x470
-constant  SI_BASE    = 0x480
+constant  SP_BASE    = KSEG1 + 0x404
+constant  SP_PC_BASE = KSEG1 + 0x408
+constant  DPC_BASE   = KSEG1 + 0x410
+constant  DPS_BASE   = KSEG1 + 0x420
+constant  MI_BASE    = KSEG1 + 0x430
+constant  VI_BASE    = KSEG1 + 0x440
+constant  AI_BASE    = KSEG1 + 0x450
+constant  PI_BASE    = KSEG1 + 0x460
+constant  RI_BASE    = KSEG1 + 0x470
+constant  SI_BASE    = KSEG1 + 0x480
 constant  CART_BASE  = 0x1000
 constant  PIF_BASE   = 0x1FC0
 
